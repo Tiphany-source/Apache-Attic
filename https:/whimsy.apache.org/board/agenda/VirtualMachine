@@ -1,0 +1,40 @@
+% gpg --verify httpd-2.0.44.tar.gz.asc httpd-2.0.44.tar.gz
+gpg: Signature made Sat Jan 18 07:21:28 2003 PST using DSA key ID DE885DD3
+gpg: Can't check signature: public key not found
+% gpg --verify httpd-2.0.44.tar.gz.asc httpd-2.0.44.tar.gz
+gpg: Signature made Sat Jan 18 07:21:28 2003 PST using DSA key ID DE885DD3
+gpg: Good signature from "Sander Striker <striker@apache.org>"
+gpg:                 aka "Sander Striker <striker@striker.nl>"
+gpg: checking the trustdb
+gpg: no ultimately trusted keys found
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Fingerprint: 4C1E ADAD B4EF 5007 579C  919C 6635 B6C0 DE88 5DD3 5th
+% gpg --fingerprint DE885DD3
+pub  1024D/DE885DD3 2002-04-10 Sander Striker <striker@apache.org>
+     Key fingerprint = 4C1E ADAD B4EF 5007 579C  919C 6635 B6C0 DE88 5DD3
+uid                 Sander Striker <striker@striker.nl>
+sub  2048g/532D14CA 2002-04-10
+pub  1024D/DE885DD3 2002-04-10 Sander Striker <striker@apache.org>
+sig        E2226795 2002-05-01   Justin R. Erenkrantz
+sig 3      DE885DD3 2002-04-10   Sander Striker
+sig        CD4DF205 2002-05-28   Wolfram Schlich
+sig        E005C9CB 2002-11-17   Greg Stein
+sig        CC8B0F7E 2002-11-18   Aaron Bannert
+sig        DFEAC4B9 2002-11-19   David N. Welton
+sig 2      82AB7BD1 2002-11-17   Cliff Woolley
+sig 2      13046155 2002-11-28   Thom May
+sig 3      19311B00 2002-11-17   Chuck Murcko
+sig 3      F894BE12 2002-11-17   Brian William Fitzpatrick
+sig 3      5C1C3AD7 2002-11-18   David Reid
+sig 3      E04F9A89 2002-11-18   Roy T. Fielding
+sig 3      CC78C893 2002-11-19   Rich Bowen
+sig 3      08C975E5 2002-11-21   Jim Jagielski
+sig 3      F88341D9 2002-11-18   Lars Eilebrecht
+sig 3      187BD68D 2002-11-21   Ben Hyde
+sig 3      49A563D9 2002-11-23   Mark Cox
+...more signatures redacted...
+% gpg --verify httpd-2.0.44.tar.gz.asc httpd-2.0.44.tar.gz
+gpg: Signature made Sat Jan 18 07:21:28 2003 PST using DSA key ID DE885DD3
+gpg: Good signature from "Sander Striker <striker@apache.org>"
+gpg:                 aka "Sander Striker <striker@striker.nl>"
